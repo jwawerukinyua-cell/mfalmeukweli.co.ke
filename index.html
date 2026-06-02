@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mfalme Ukweli | Business Foundations</title>
+
+<!-- OG / Twitter Meta -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mfalmeukweli.co.ke/">
+<meta property="og:title" content="Mfalme Ukweli | Business Foundations">
+<meta property="og:description" content="Distill 20 years of business experience into a legacy that lasts. Build right, from day one.">
+<meta property="og:image" content="https://i.postimg.cc/BnvXPQNM/file-00000000fbe071f597f2ce9e1c59e661.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.mfalmeukweli.co.ke/">
+<meta property="twitter:title" content="Mfalme Ukweli | Business Foundations">
+<meta property="twitter:description" content="Strategic blueprints for founders who want to move beyond 'Trial & Hoping'.">
+<meta property="twitter:image" content="https://i.postimg.cc/BnvXPQNM/file-00000000fbe071f597f2ce9e1c59e661.jpg">
+
+<!-- Preloads -->
+<link rel="preload" as="image" href="https://i.postimg.cc/43qj68dJ/mfalme-ukweli.webp" fetchpriority="high">
+<link rel="preload" as="image" href="https://i.postimg.cc/mD700XpX/For-menu-links.webp">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&family=Cardo:ital@1&display=swap" rel="stylesheet">
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "w5f15evezi");
+</script>
+
+<style>
+/* =============================================
+   GLOBAL RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #000; color: #fff; overflow-x: hidden; }
+
+/* =============================================
+   SCROLL INDICATOR
+   ============================================= */
+#k-scroll-indicator {
+  position: fixed;
+  top: 59px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #e2d1a4;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(226,209,164,0.4);
+  transition: width 0.1s ease-out;
+}
+
+/* =============================================
+   NAV
+   ============================================= */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #002366;
+  border-bottom: 1px solid rgba(226,209,164,0.2);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-inner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo shimmer */
+.k-logo-shimmer {
+  font-family: 'Alata', sans-serif;
+  color: #ffffff;
+  font-size: 1.0rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.k-logo-shimmer::after {
+  content: "MFALME UKWELI";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to right, transparent 0%, #e2d1a4 50%, transparent 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldSweep 4s infinite;
+}
+@keyframes goldSweep {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.nav-globe-btn {
+  width: 35px; height: 35px;
+  border-radius: 50%;
+  border: 1px solid #e2d1a4;
+  background: url('https://i.postimg.cc/BnvXPQNM/file-00000000fbe071f597f2ce9e1c59e661.jpg') no-repeat center / cover;
+  cursor: pointer;
+}
+
+/* =============================================
+   MENU OVERLAY
+   ============================================= */
+#k-menu-overlay {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 10000;
+  display: none;
+  background: rgba(0,0,0,0.86);
+  align-items: center;
+  justify-content: center;
+}
+.k-menu-card {
+  background: #002366;
+  border: 1px solid rgba(226,209,164,0.2);
+  padding: 50px 30px;
+  text-align: center;
+  width: 320px;
+}
+.k-globe-aura {
+  width: 80px; height: 80px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  border: 2px solid #e2d1a4;
+  background: url('https://i.postimg.cc/BnvXPQNM/file-00000000fbe071f597f2ce9e1c59e661.jpg') no-repeat center / cover;
+  box-shadow: 0 0 20px rgba(226,209,164,0.5);
+  animation: pulseGlobe 2.5s infinite;
+}
+@keyframes pulseGlobe {
+  0%   { transform: scale(1);    box-shadow: 0 0 10px rgba(226,209,164,0.4); }
+  50%  { transform: scale(1.05); box-shadow: 0 0 25px rgba(226,209,164,0.7); }
+  100% { transform: scale(1);    box-shadow: 0 0 10px rgba(226,209,164,0.4); }
+}
+.k-links { display: flex; flex-direction: column; gap: 18px; }
+.k-links a {
+  font-family: 'Alata', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.k-links a:hover { color: #e2d1a4; }
+.menu-return {
+  margin-top: 35px;
+  color: #e2d1a4;
+  cursor: pointer;
+  font-family: 'Alata', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+/* =============================================
+   HERO — FIXED: lighter overlay so image shows
+   ============================================= */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* KEY FIX: reduced opacity from 0.50/0.70 → 0.30/0.55 so the photo breathes */
+  background:
+    linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.55)),
+    url('https://i.postimg.cc/43qj68dJ/mfalme-ukweli.webp') center / cover no-repeat;
+  padding: 80px 15px 60px;
+}
+.k-hero-cinematic {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+.k-hero-bold {
+  font-family: 'Alata', sans-serif;
+  color: #8B0000;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  /* Stronger text-shadow to keep it legible on lighter bg */
+  text-shadow: 2px 2px 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.9);
+}
+.k-hero-sub {
+  font-family: 'Lora', serif;
+  color: #e2d1a4;
+  font-size: 1.3rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 12px rgba(0,0,0,0.95);
+  margin-top: 5px;
+}
+.k-story-box {
+  background: rgba(5,5,5,0.70);
+  padding: 50px 30px;
+  border: 1px solid rgba(226,209,164,0.25);
+  width: 100%;
+  max-width: 850px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.k-transition-flow p {
+  font-family: 'Lora', serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin: 18px 0;
+}
+.k-highlight-red { color: #8B0000; font-weight: 700; text-transform: uppercase; }
+.k-link-gold {
+  color: #e2d1a4;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(226,209,164,0.5);
+}
+.btn-genesis {
+  font-family: 'Alata', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  border: 1px solid #e2d1a4;
+  color: #e2d1a4 !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  transition: 0.4s;
+  background: transparent;
+}
+.btn-genesis span { margin-left: 12px; display: inline-block; animation: nudge 2s infinite; }
+@keyframes nudge {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(6px); }
+}
+.btn-genesis:hover { background: #e2d1a4; color: #000 !important; }
+
+@media (max-width: 768px) {
+  .k-hero-bold { font-size: 2rem; letter-spacing: 2px; }
+  .k-hero-sub  { font-size: 1.1rem; color: #e2d1a4 !important; }
+  .k-transition-flow p { font-size: 1.1rem; }
+  .k-story-box { padding: 35px 20px; }
+  .btn-genesis { padding: 15px 35px; letter-spacing: 3px; }
+}
+
+/* =============================================
+   GENESIS — HORIZONTAL SNAP
+   ============================================= */
+#genesis {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.snap-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-track::-webkit-scrollbar { display: none; }
+.chapter-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chapter-slide::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+  z-index: 1;
+}
+.bg-dust    { background: url('https://i.postimg.cc/TP8ZJfxy/The_Dust_Revolution_time_Amboseli.jpg') center/cover no-repeat; }
+.bg-illusion{ background: url('https://i.postimg.cc/YSTMBGZW/SHERIA.png') center/cover no-repeat; }
+.bg-death   { background: url('https://i.postimg.cc/pV1ZhqCq/shut-it-all-down.png') center/cover no-repeat; }
+
+.k-chapter-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(5,5,5,0.3);
+  border: 1px solid rgba(226,209,164,0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  width: 85%;
+  max-width: 650px;
+  padding: 60px 50px;
+  text-align: left;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.ch-label  { color: #e2d1a4; letter-spacing: 4px; font-size: 0.8rem; text-transform: uppercase; font-family: 'Alata', sans-serif; }
+.ch-year   { background: #8B0000; color: #fff; padding: 6px 16px; font-size: 0.9rem; margin: 20px 0; display: inline-block; font-family: 'Alata', sans-serif; letter-spacing: 2px; }
+.ch-title  { font-family: 'Alata', sans-serif; font-size: clamp(2rem,6vw,2.8rem); margin: 15px 0; line-height: 1.1; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+.ch-text   { font-family: 'Lora', serif; font-size: 1.25rem; color: #fff; line-height: 1.7; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
+.genesis-truth { display: block; margin-top: 15px; padding-left: 20px; border-left: 3px solid #8B0000; font-weight: 700; letter-spacing: 2px; color: #e2d1a4; font-family: 'Alata', sans-serif; font-size: 0.9rem; text-transform: uppercase; }
+
+.swipe-nav-attached { display: flex; gap: 15px; margin-top: 40px; position: relative; width: 100%; }
+#ch2 .swipe-nav-attached, #ch3 .swipe-nav-attached { justify-content: space-between; }
+.nav-btn {
+  width: 60px; height: 60px;
+  border: 1px solid rgba(226,209,164,0.4);
+  background: rgba(0,0,0,0.4);
+  color: #e2d1a4;
+  text-decoration: none;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.nav-btn:hover { background: #e2d1a4; color: #000; border-color: #e2d1a4; }
+.proof-link {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 12px 20px;
+  background: transparent;
+  border: 1px solid #e2d1a4;
+  color: #e2d1a4 !important;
+  text-decoration: none;
+  font-family: 'Alata', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.proof-link:hover { background: #e2d1a4; color: #000 !important; }
+.battle-pulse {
+  border-color: #8B0000 !important;
+  color: #8B0000 !important;
+  background: rgba(139,0,0,0.2) !important;
+  animation: pulse-red-scale 1.5s infinite ease-in-out;
+}
+@keyframes pulse-red-scale {
+  0%   { transform: scale(1);   box-shadow: 0 0 0 0 rgba(139,0,0,0.7); }
+  50%  { transform: scale(1.1); box-shadow: 0 0 20px 5px rgba(139,0,0,0.5); }
+  100% { transform: scale(1);   box-shadow: 0 0 0 0 rgba(139,0,0,0); }
+}
+@media (max-width: 768px) {
+  .k-chapter-box { width: 92%; padding: 40px 25px; }
+  .ch-text { font-size: 1.1rem; }
+  .ch-title { font-size: 1.8rem; }
+  .nav-btn { width: 55px; height: 55px; }
+}
+
+/* =============================================
+   THE BATTLE
+   ============================================= */
+#thebattle {
+  background-color: #000;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none !important;
+  margin: 0 !important;
+}
+.battle-grid {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+}
+.path-container { flex: 1; min-width: 320px; display: flex; flex-direction: column; }
+.path-headline {
+  font-family: 'Alata', sans-serif;
+  color: #8B0000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+  min-height: 3em;
+}
+.battle-card {
+  position: relative;
+  width: 100%;
+  min-height: 550px;
+  border: 1px solid rgba(226,209,164,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.16,1,0.3,1);
+  background-size: cover;
+  background-position: center;
+}
+.battle-card::before {
+  content: "";
+  position: absolute; top:0; left:0; width:100%; height:100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.95));
+  z-index: 1;
+}
+.path-gold-bg    { background-image: url('https://i.postimg.cc/3wbJJrf1/start-here.png'); }
+.path-crimson-bg { background-image: url('https://i.postimg.cc/tgK4KYxv/weight-of-business.png'); }
+.card-inner {
+  position: relative; z-index: 2;
+  padding: 60px 40px; height: 100%;
+  display: flex; flex-direction: column; justify-content: center; text-align: left;
+}
+.path-gold-bg    h4 { color: #e2d1a4; }
+.path-crimson-bg h4 { color: #8B0000; }
+.card-inner h4 { font-family: 'Alata', sans-serif; letter-spacing: 3px; text-transform: uppercase; font-size: 1.1rem; margin-bottom: auto; }
+.battle-card p { font-family: 'Lora', serif; font-size: 1.15rem; color: #ccc; line-height: 1.7; margin: 40px 0; }
+.path-gold-bg    p strong { color: #e2d1a4; }
+.path-crimson-bg p strong { color: #8B0000; }
+.battle-btn {
+  margin-top: auto; padding: 20px; text-align: center;
+  font-family: 'Alata', sans-serif; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 4px; font-size: 0.8rem;
+  transition: 0.3s; border: none;
+}
+.btn-gold    { background: #e2d1a4; color: #000; }
+.btn-crimson { background: #8B0000; color: #fff !important; }
+.battle-card:hover { transform: translateY(-10px); border-color: rgba(226,209,164,0.4); }
+@media (max-width: 768px) {
+  .battle-grid { width: 92%; gap: 40px; }
+  .path-container { min-width: 100%; }
+  .path-headline { min-height: auto; margin-bottom: 15px; font-size: 1rem; }
+  .battle-card { min-height: 500px; }
+  .card-inner { padding: 40px 25px; text-align: center; }
+  .card-inner h4 { margin-bottom: 20px; }
+}
+
+/* =============================================
+   BOOKS VAULT
+   ============================================= */
+#booksvault {
+  background: #000;
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+}
+.auth-header { text-align: center; margin-bottom: 30px; width: 100%; white-space: nowrap; }
+.auth-header span {
+  color: #C5A059; letter-spacing: 5px; font-size: 0.75rem;
+  text-transform: uppercase; font-family: 'Alata', sans-serif; font-weight: 400;
+  display: inline-block;
+}
+.bridge-container {
+  width: 100%; max-width: 800px; margin-bottom: 20px;
+  position: relative; display: flex; flex-direction: column; align-items: center;
+}
+.t-track { width: 100%; min-height: 280px; display: flex; align-items: center; justify-content: center; position: relative; }
+.t-card {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 100%; opacity: 0; visibility: hidden; transition: opacity 0.6s ease;
+  text-align: center; z-index: 1;
+}
+.t-card.active { opacity: 1; visibility: visible; z-index: 2; }
+.t-photo { width: 80px; height: 80px; border-radius: 20%; border: 2px solid #C5A059; margin-bottom: 15px; object-fit: cover; }
+.t-text { font-family: 'Lora', serif; font-style: italic; font-size: 1.15rem; line-height: 1.6; margin-bottom: 10px; padding: 0 15px; }
+.t-credit { font-family: 'Alata', sans-serif; color: #C5A059; font-weight: 400; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; }
+.t-nav { cursor: pointer; color: #C5A059; font-size: 1.5rem; padding: 10px 20px; z-index: 10; transition: 0.3s; user-select: none; }
+.t-nav:hover { color: #fff; }
+.desktop-nav { position: absolute; width: 110%; display: flex; justify-content: space-between; top: 50%; transform: translateY(-50%); }
+.mobile-nav-box { display: none; justify-content: center; gap: 50px; margin-top: 30px; margin-bottom: 10px; }
+
+.vault-title { text-align: center; margin: 0 0 40px 0; width: 100%; padding-top: 40px; border-top: 1px solid rgba(197,160,89,0.2); }
+.vault-title h2 { font-family: 'Alata', sans-serif; font-size: clamp(2rem,8vw,3rem); letter-spacing: 6px; text-transform: uppercase; }
+
+#builder-zone { display: block; width: 100%; max-width: 1000px; animation: fadeIn 0.8s ease; }
+#fixer-zone   { display: none;  width: 100%; max-width: 1000px; animation: fadeIn 0.8s ease; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.path-narrative { font-family: 'Alata', sans-serif; color: #C5A059; text-transform: uppercase; letter-spacing: 3px; text-align: center; margin-bottom: 25px; font-size: 0.9rem; }
+
+.book-card {
+  width: 100%; display: flex; align-items: center; gap: 40px;
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);
+  padding: 40px; margin-bottom: 30px; box-sizing: border-box;
+}
+.book-img { width: 100%; max-width: 240px; filter: drop-shadow(0 15px 30px #000); }
+.book-info h2 { font-family: 'Alata', sans-serif; font-size: 1.6rem; margin-bottom: 15px; }
+.book-info p { color: #aaa; margin-bottom: 25px; line-height: 1.6; font-family: 'Lora', serif; }
+.btn-buy {
+  display: inline-block; padding: 16px 35px; background: #8B0000; color: #fff !important;
+  text-decoration: none; font-family: 'Alata', sans-serif; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;
+}
+.btn-buy:hover { background: #a00000; }
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none; }
+  .mobile-nav-box { display: flex; }
+  .book-card { flex-direction: column; text-align: center; }
+  .auth-header span { font-size: 0.65rem; letter-spacing: 3px; }
+}
+
+/* =============================================
+   THE QUE SPOT
+   ============================================= */
+#thequespot-master {
+  background: #040d04;
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Alata', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.que-card-v2 { width: 100%; max-width: 900px; text-align: center; padding: 0 8%; box-sizing: border-box; }
+.que-logo-main { width: 100%; max-width: 280px; margin-bottom: 50px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
+.investor-hook {
+  max-width: 750px; margin: 0 auto 50px auto;
+  border-top: 1px solid rgba(226,209,164,0.3); padding-top: 15px;
+}
+.phase-tag-inline { color: #71e440; letter-spacing: 5px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; display: block; margin-bottom: 25px; opacity: 0.9; }
+.investor-hook h2 { font-family: 'Alata', sans-serif; font-size: 2.2rem; color: #e2d1a4; letter-spacing: 8px; text-transform: uppercase; margin-bottom: 30px; }
+.premium-quote { font-family: 'Cardo', serif; font-style: italic; font-size: 1.35rem; color: #f4f4f4; line-height: 1.9; position: relative; text-align: center; }
+.premium-quote span.gold { color: #e2d1a4; font-weight: 700; font-style: normal; }
+.q-break { display: block; content: ""; margin-top: 15px; }
+.pillar-list { list-style: none; padding: 0; margin: 50px auto; display: inline-block; text-align: left; }
+.pillar-list li { color: #fff; font-weight: 400; font-size: 1.1rem; margin-bottom: 20px; display: flex; align-items: center; letter-spacing: 1.5px; white-space: nowrap; }
+.pillar-list li::before { content: '◈'; color: #71e440; margin-right: 20px; font-size: 1.3rem; flex-shrink: 0; }
+.btn-gate-open {
+  background: #71e440; color: #000; width: 100%; max-width: 450px;
+  padding: 24px; font-weight: 900; text-transform: uppercase; letter-spacing: 3px;
+  border: none; cursor: pointer; font-family: 'Alata'; margin: 20px auto; transition: 0.3s ease; display: block;
+}
+.btn-gate-open:hover { background: #5dcc30; }
+
+#investorprospectus {
+  display: none; width: 100%; max-width: 1000px;
+  background: #000; padding: 80px 10%; box-sizing: border-box;
+  border-top: 2px solid #71e440; animation: fadeIn 0.8s ease;
+}
+.pro-visual { width: 100%; border: 1px solid rgba(113,228,64,0.3); margin-bottom: 50px; }
+.mobile-row {
+  display: flex; justify-content: space-between;
+  padding: 25px 0; border-bottom: 1px solid rgba(226,209,164,0.1);
+}
+.rev-total-highlight { background: #71e440; color: #000; padding: 45px 20px; margin: 50px 0; text-align: center; }
+.call-action-block { background: #d40000; padding: 70px 20px; text-align: center; margin-top: 60px; }
+.btn-phone {
+  display: inline-block; background: #000; color: #fff; padding: 22px 50px;
+  text-decoration: none; font-weight: 900; letter-spacing: 4px; border: 2px solid #fff;
+  font-family: 'Alata';
+}
+.btn-phone:hover { background: #fff; color: #000; }
+
+@media (max-width: 768px) {
+  #thequespot-master { padding: 60px 0; }
+  .investor-hook h2 { font-size: 1.6rem; letter-spacing: 5px; }
+  .premium-quote { font-size: 1.1rem; line-height: 1.7; padding: 0 5%; }
+  .q-break { margin-top: 10px; }
+  .pillar-list li { font-size: 0.95rem; white-space: normal; }
+  .btn-gate-open { width: 90%; font-size: 0.8rem; }
+  .mobile-row { flex-direction: column; gap: 8px; text-align: left; }
+}
+
+/* =============================================
+   STRATEGIC SURVEY
+   ============================================= */
+#strategic-survey {
+  background: #002366;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.future-line {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: nowrap;
+  list-style: none; padding: 0; margin: 30px 0; font-family: 'Alata', sans-serif;
+  overflow-x: hidden; align-items: center;
+}
+.future-line li { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: #fff; white-space: nowrap; display: flex; align-items: center; }
+.future-line li:not(:last-child)::after {
+  content: ""; margin-left: 8px; width: 3px; height: 22px; display: inline-block;
+  background: linear-gradient(to bottom, #000 33.3%, #BB0000 33.3% 66.6%, #006600 66.6%);
+}
+.social-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; justify-content: center; }
+.chip-option { padding: 10px 18px; border: 1px solid rgba(0,35,102,0.2); border-radius: 4px; font-family: 'Alata'; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.3s; background: #f8f9fa; color: #002366; }
+.chip-option.selected { background: #002366; color: #fff; border-color: #002366; }
+#survey-content { display: none; margin-top: 30px; }
+.s-box { background: #fff; padding: 40px; text-align: left; max-width: 600px; margin: 0 auto; color: #000; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+.s-input-label { display: block; font-family: 'Alata'; color: #002366; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; }
+.s-field { width: 100%; padding: 12px; background: #f8f9fa; border: 1px solid #002366; font-family: 'Lora'; font-size: 1rem; margin-bottom: 20px; box-sizing: border-box; }
+.trigger-btn { background: #e2d1a4; color: #002366; border: none; padding: 20px 40px; font-family: 'Alata'; font-weight: 900; text-transform: uppercase; cursor: pointer; letter-spacing: 4px; transition: 0.3s; }
+.trigger-btn:hover { background: #d4c090; }
+.s-btn-final { width: 100%; background: #002366; color: #fff; border: none; padding: 18px; font-family: 'Alata'; font-weight: 900; text-transform: uppercase; cursor: pointer; letter-spacing: 3px; }
+.s-btn-final:hover { background: #003399; }
+.privacy-trigger { font-family: 'Alata'; color: #e2d1a4; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; margin: 25px auto 0 auto; opacity: 0.6; transition: 0.3s; display: block; width: fit-content; }
+.privacy-trigger:hover { opacity: 1; }
+#privacy-content { display: none; background: rgba(255,255,255,0.05); padding: 30px; max-width: 700px; margin: 20px auto; text-align: left; border: 1px solid rgba(226,209,164,0.2); }
+#privacy-content p, #privacy-content li { font-family: 'Lora'; font-size: 0.85rem; color: #ccc; line-height: 1.6; margin-bottom: 15px; }
+
+@media (min-width: 769px) {
+  .future-line li { font-size: 1.1rem; letter-spacing: 2px; }
+  .future-line { gap: 15px; }
+  .future-line li:not(:last-child)::after { height: 28px; margin-left: 15px; }
+}
+
+/* =============================================
+   CONNECT / FOOTER
+   ============================================= */
+#connect {
+  background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)),
+              url('https://i.postimg.cc/43qj68dJ/mfalme-ukweli.webp') bottom / cover;
+  padding: 100px 0 40px 0;
+  display: flex; flex-direction: column; align-items: center;
+  width: 100%; color: #fff;
+}
+.final-container { width: 90%; max-width: 950px; text-align: center; }
+.blueprint-media {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px;
+}
+.media-card-premium {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(226,209,164,0.1);
+  padding: 40px 20px; display: flex; flex-direction: column; align-items: center;
+  transition: 0.4s ease; min-height: 400px; justify-content: center;
+  backdrop-filter: blur(5px); gap: 15px;
+}
+.media-card-premium:hover { border-color: rgba(226,209,164,0.4); transform: translateY(-5px); }
+.card-icon-square { width: 75px; height: 75px; border: 1px solid #e2d1a4; margin-bottom: 10px; object-fit: cover; }
+.card-label { font-family: 'Alata'; color: #e2d1a4; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 900; }
+.card-title { font-family: 'Alata'; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; color: #fff; }
+.card-quote { font-family: 'Lora'; font-style: italic; font-size: 0.95rem; color: #ccc; line-height: 1.5; max-width: 280px; }
+.btn-premium { display: inline-block; padding: 12px 25px; background: #8B0000; color: #fff !important; text-decoration: none; font-family: 'Alata'; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem; width: 80%; }
+.btn-premium:hover { background: #a00000; }
+
+.btn-shared-moments {
+  display: block;
+  background: linear-gradient(135deg, #2596be 0%, #5f1c52 100%);
+  border: 1px solid #e2d1a4; color: #fff !important;
+  padding: 25px; text-decoration: none; font-family: 'Alata';
+  font-weight: 900; letter-spacing: 3px; margin: 40px auto;
+  max-width: 550px; text-transform: uppercase; font-size: 1rem; transition: 0.4s;
+}
+.btn-shared-moments:hover { opacity: 0.85; }
+.btn-shared-moments span { color: #fff; display: block; font-size: 0.7rem; margin-bottom: 8px; letter-spacing: 4px; opacity: 0.9; }
+
+#investorgate { width: 100%; max-width: 1000px; margin-top: 40px; text-align: center; }
+.btn-partner-ukweli {
+  position: relative; display: inline-block; padding: 22px 45px;
+  background: #000; color: #e2d1a4 !important; border: 2px solid #e2d1a4;
+  text-decoration: none; font-family: 'Alata', sans-serif; font-weight: 400;
+  font-size: 0.9rem; letter-spacing: 4px; text-transform: uppercase;
+  overflow: hidden; transition: all 0.4s ease; box-shadow: 0 0 15px rgba(226,209,164,0.1);
+}
+.btn-partner-ukweli::before {
+  content: ''; position: absolute; top: 0; left: -150%; width: 50%; height: 100%;
+  background: linear-gradient(to right, rgba(226,209,164,0) 0%, rgba(226,209,164,0.4) 50%, rgba(226,209,164,0) 100%);
+  transform: skewX(-25deg); animation: light-beam 3s infinite;
+}
+@keyframes light-beam { 0% { left: -150%; } 50% { left: 150%; } 100% { left: 150%; } }
+
+.social-links { display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }
+.social-link { font-family: 'Alata'; color: #fff; text-decoration: none; font-size: 0.85rem; text-transform: uppercase; font-weight: 700; letter-spacing: 2px; border-bottom: 2px solid rgba(226,209,164,0.3); padding-bottom: 4px; }
+.social-link:hover { color: #e2d1a4; border-color: #e2d1a4; }
+
+.footer-copy { color: rgba(255,255,255,0.2); font-size: 0.6rem; letter-spacing: 4px; text-transform: uppercase; font-family: 'Alata'; margin-top: 60px; }
+
+@media (max-width: 768px) {
+  #connect { background-attachment: scroll !important; }
+  .blueprint-media { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .media-card-premium { padding: 25px 10px; min-height: 350px; gap: 10px; }
+  .card-icon-square { width: 55px; height: 55px; }
+  .card-title { font-size: 0.85rem; }
+  .card-quote { font-size: 0.75rem; line-height: 1.3; }
+  .btn-premium { width: 100%; padding: 12px 5px; font-size: 0.65rem; }
+  .btn-partner-ukweli { padding: 18px 30px; font-size: 0.75rem; letter-spacing: 2px; width: 90%; }
+}
+</style>
+</head>
+<body>
+
+<!-- SCROLL INDICATOR -->
+<div id="k-scroll-indicator"></div>
+
+<!-- ===================== NAV ===================== -->
+<nav>
+  <div class="nav-inner">
+    <span class="k-logo-shimmer">MFALME UKWELI</span>
+    <div class="nav-globe-btn" onclick="toggleK(true)" role="button" aria-label="Open Navigation Menu"></div>
+  </div>
+</nav>
+
+<!-- MENU OVERLAY -->
+<div id="k-menu-overlay">
+  <div class="k-menu-card">
+    <div class="k-globe-aura" role="img" aria-label="Mfalme Ukweli Globe Icon"></div>
+    <div class="k-links">
+      <a href="#home"        onclick="toggleK(false)">HOME</a>
+      <a href="#genesis"     onclick="toggleK(false)">GENESIS</a>
+      <a href="#thebattle"   onclick="toggleK(false)">BATTLE</a>
+      <a href="#booksvault"  onclick="toggleK(false)">VAULT</a>
+      <a href="#thequespot-master" onclick="toggleK(false)">THE QUE SPOT</a>
+      <a href="#connect"     onclick="toggleK(false)" style="color:#a8ff00;">CONNECT</a>
+    </div>
+    <div class="menu-return" onclick="toggleK(false)" role="button">[ RETURN ]</div>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section id="home">
+  <div class="k-hero-cinematic">
+    <h2 class="k-hero-bold">
+      After 23 Years.<br>
+      I Lost My Business Empire...
+    </h2>
+    <p class="k-hero-sub">Don't build on the wrong foundation</p>
+  </div>
+  <div class="k-story-box">
+    <div class="k-transition-flow">
+      <p>I spent two decades building a kingdom on the <span class="k-highlight-red">wrong foundation.</span></p>
+      <p>Now, I am giving you the <a href="https://wa.me/p/24182297721386546/254727405842" target="_blank" class="k-link-gold">blueprint</a> most entrepreneurs WISH they had before getting started.</p>
+    </div>
+    <a href="#genesis" class="btn-genesis">The Genesis <span>→</span></a>
+  </div>
+</section>
+
+<!-- ===================== GENESIS ===================== -->
+<section id="genesis">
+  <div class="snap-track" id="genesis-track">
+
+    <div class="chapter-slide bg-dust" id="ch1">
+      <div class="k-chapter-box">
+        <span class="ch-label">Chapter I: The Dust</span><br>
+        <span class="ch-year">2002</span>
+        <h2 class="ch-title">It started in the dust.</h2>
+        <p class="ch-text">Before formalizing my business in 2008 at Sheria House, I had a kiosk next to "Tibbz Restaurant" in Kawangware-Amboseli.
+          <span class="genesis-truth">No systems.</span>
+          <span class="genesis-truth">No safety net.</span>
+          <span class="genesis-truth">Just raw hunger.</span>
+        </p>
+        <div class="swipe-nav-attached">
+          <a href="#ch2" class="nav-btn" onclick="document.getElementById('genesis-track').scrollBy({left: window.innerWidth, behavior:'smooth'}); return false;">›</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter-slide bg-illusion" id="ch2">
+      <div class="k-chapter-box">
+        <span class="ch-label">Chapter II: The Illusion</span><br>
+        <span class="ch-year">2008</span>
+        <h2 class="ch-title">The formal trap.</h2>
+        <p class="ch-text">I registered my business [Ukweli Products] and later rebranded to <strong>Ukweli Crafts</strong>.</p>
+        <a href="https://share.google/W5VaSeGeoXhBOoMsZ" target="_blank" class="proof-link">See the Business Proof here</a>
+        <p class="ch-text">I had the papers and the "CEO" title. But underneath, the survival mentality was still running the EMPIRE.</p>
+        <div class="swipe-nav-attached">
+          <a href="#ch1" class="nav-btn" onclick="document.getElementById('genesis-track').scrollBy({left: -window.innerWidth, behavior:'smooth'}); return false;">‹</a>
+          <a href="#ch3" class="nav-btn" onclick="document.getElementById('genesis-track').scrollBy({left: window.innerWidth, behavior:'smooth'}); return false;">›</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter-slide bg-death" id="ch3">
+      <div class="k-chapter-box">
+        <span class="ch-label">Chapter III: The End</span><br>
+        <span class="ch-year">2025</span>
+        <h2 class="ch-title">The brutal reality.</h2>
+        <p class="ch-text">23 years later, the structure CRUMBLED & so did my business.<br><br>I had to bring down the version of myself that was playing small to build something that lasts...</p>
+        <div class="swipe-nav-attached">
+          <a href="#ch2" class="nav-btn" onclick="document.getElementById('genesis-track').scrollBy({left: -window.innerWidth, behavior:'smooth'}); return false;">‹</a>
+          <a href="#thebattle" class="nav-btn battle-pulse">⚔</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== THE BATTLE ===================== -->
+<section id="thebattle" aria-label="Choose Your Entrepreneurial Path">
+  <div class="battle-grid">
+    <div class="path-container">
+      <h3 class="path-headline">Building your first business?</h3>
+      <a href="#booksvault" class="battle-card path-gold-bg" onclick="window.openVault('builder-zone')">
+        <div class="card-inner">
+          <h4>I AM STARTING OUT</h4>
+          <p>I have the hunger, but I refuse to build a kiosk.<br><br>I want to build a kingdom on a <strong>Sovereign Foundation</strong> from Day 1.</p>
+          <div class="battle-btn btn-gold">START HERE</div>
+        </div>
+      </a>
+    </div>
+    <div class="path-container">
+      <h3 class="path-headline">Or fighting to save one?</h3>
+      <a href="#booksvault" class="battle-card path-crimson-bg" onclick="window.openVault('fixer-zone')">
+        <div class="card-inner">
+          <h4>I AM SAVING MY BUSINESS</h4>
+          <p>I've built something, but the walls are cracking.<br><br>I need the <strong>Blueprint</strong> to fix the foundation before the roof falls in.</p>
+          <div class="battle-btn btn-crimson">FIX MY BUSINESS</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOOKS VAULT ===================== -->
+<section id="booksvault" aria-label="Books Vault and Business Resources">
+  <div class="auth-header"><span>ESTABLISHED AUTHORITY</span></div>
+
+  <div class="bridge-container">
+    <div class="desktop-nav">
+      <div class="t-nav" role="button" aria-label="Previous Testimonial" onclick="changeT(-1)">&#10094;</div>
+      <div class="t-nav" role="button" aria-label="Next Testimonial" onclick="changeT(1)">&#10095;</div>
+    </div>
+    <div class="t-track" aria-live="polite">
+      <div class="t-card active">
+        <img class="t-photo" src="https://i.postimg.cc/ryGg681h/Neelma-Malde-20250619-102114-0000.png" alt="Neelma Malde">
+        <div class="t-text">"The book's greatest strength is its authenticity. Real-life stories that make the tips come to life."</div>
+        <span class="t-credit">Neelma Malde — Jars of Goodness</span>
+      </div>
+      <div class="t-card">
+        <img class="t-photo" src="https://i.postimg.cc/2S4V8VR3/Brian-Nyangweso-20250623-114329-0000.png" alt="Joseph Brian">
+        <div class="t-text">"Clarity. Confidence. Practical advice. Mfalme Ukweli gets it—and gets you moving in the right direction."</div>
+        <span class="t-credit">Joseph Brian — GreenStem Supplies</span>
+      </div>
+      <div class="t-card">
+        <img class="t-photo" src="https://i.postimg.cc/6550YMGQ/Mary-Mwikali-20250617-083749-0000.png" alt="Mary Mwikali">
+        <div class="t-text">"The book is practical. I like the personal takeaways. And I can relate to them."</div>
+        <span class="t-credit">Mary Mwikali — BeyondWater</span>
+      </div>
+      <div class="t-card">
+        <img class="t-photo" src="https://i.postimg.cc/gcMRkmnY/Kawira-Mirero-20250617-083440-0000.png" alt="Kawira Mirero">
+        <div class="t-text">"My initial reaction is… it's solid advice."</div>
+        <span class="t-credit">Kawira Mirero — Mambo Pambo</span>
+      </div>
+      <div class="t-card">
+        <img class="t-photo" src="https://i.postimg.cc/wB1tvXm8/FB-IMG-1750852875124.jpg" alt="Kemunto Nyakundi">
+        <div class="t-text">"The first sale gave me confidence… but honestly, the fear never really goes away."</div>
+        <span class="t-credit">Kemunto Nyakundi — Book Lounge</span>
+      </div>
+    </div>
+    <div class="mobile-nav-box">
+      <div class="t-nav" role="button" aria-label="Previous Testimonial" onclick="changeT(-1)">&#10094;</div>
+      <div class="t-nav" role="button" aria-label="Next Testimonial" onclick="changeT(1)">&#10095;</div>
+    </div>
+  </div>
+
+  <div class="vault-title"><h2>THE VAULT.</h2></div>
+
+  <div id="builder-zone">
+    <div class="path-narrative">The Sovereign Foundation</div>
+    <div class="book-card">
+      <img src="https://i.postimg.cc/JnDfqJ24/20250726-090355-0000.png" class="book-img" alt="Success In Your First Business">
+      <div class="book-info">
+        <h2>Success In Your First Business</h2>
+        <p style="margin-bottom:20px; font-weight:700; color:#C5A059; letter-spacing:1px; font-family:'Lora';">THE BLUEPRINT.</p>
+        <div style="text-align:left; margin-bottom:25px; font-family:'Lora',serif; color:#aaa; line-height:1.8;">
+          <div style="margin-bottom:8px;">• 17 Practical Tips covering mindset, planning, and growth.</div>
+          <div style="margin-bottom:8px;">• Real-Life Stories of wins, failures, and hard lessons.</div>
+          <div style="margin-bottom:8px;">• A Founder's Checklist to help you avoid costly mistakes.</div>
+        </div>
+        <a href="https://wa.me/p/24182297721386546/254727405842" target="_blank" class="btn-buy">BUY YOUR EBOOK</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="fixer-zone">
+    <div class="path-narrative" style="color:#8B0000;">The Rescue & Recovery</div>
+    <div class="book-card">
+      <img src="https://i.postimg.cc/3wJ7gkhZ/1773949267747.jpg" class="book-img" alt="17 Hard Truths">
+      <div class="book-info">
+        <h2>17 Hard Truths</h2>
+        <p style="margin-bottom:20px; font-weight:700; color:#8B0000; letter-spacing:1px; font-family:'Lora';">THE ONLY TOOL for EXITING or FIXING.</p>
+        <div style="text-align:left; margin-bottom:30px; font-family:'Lora',serif; color:#aaa; line-height:1.7; font-style:italic;">
+          "Not every story ends in a win, but every ending contains a masterclass. Learn how to dismantle a venture with dignity or salvage your EMPIRE in time."
+        </div>
+        <a href="https://wa.me/p/28831232349857415/254727405842" target="_blank" class="btn-buy">BUY YOUR EBOOK</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE QUE SPOT ===================== -->
+<section id="thequespot-master" aria-label="The Que Spot Investment and Partnership Portal">
+  <div class="que-card-v2">
+    <img src="https://i.postimg.cc/0yfHdrWM/The-Que-Spot.jpg" alt="The Que Spot Logo" class="que-logo-main">
+    <div class="investor-hook">
+      <span class="phase-tag-inline">PHASE I: KAHAWA WEST</span>
+      <h2>THE VISION</h2>
+      <ul class="pillar-list" aria-label="Business Pillars">
+        <li>Safe Networking Environment</li>
+        <li>M-Pesa Integrated (Automated Pool Tables)</li>
+        <li>Drugs & Alcohol-Free (No Miraa or Cigarettes)</li>
+      </ul>
+      <p class="premium-quote">
+        After <span class="gold">24 years of entrepreneurship</span>, I am pouring my heart and experience into building
+        <a href="https://jwawerukinyua-cell.github.io/thequespot/" target="_blank" class="gold" style="text-decoration:underline; cursor:pointer;"> The Que Spot. </a>
+        <span class="q-break"></span>
+        We are creating a space where the game of pool meets real community—from serious competitors to amateurs learning from the ground up.<span class="q-break"></span>
+        It is about more than the game; it is about building meaningful connections and a resilient business networking community.<span class="q-break"></span>
+        We are building now, and looking for the perfect partner/s to help bring this VISION to reality."
+      </p>
+    </div>
+    <button class="btn-gate-open" id="triggerBtn" aria-expanded="false" aria-controls="investorprospectus">Access Partnership Idea</button>
+  </div>
+
+  <div id="investorprospectus" role="region" aria-label="Detailed Business Prospectus">
+    <img src="https://i.postimg.cc/25Gb4W83/Theque-Spot-Reduced-size.jpg" alt="The Que Spot Interior Design" class="pro-visual">
+    <h3 style="color:#e2d1a4; font-family:'Playfair Display'; font-size:2.2rem; margin-bottom:20px; font-style:italic; text-align:center;">The Business Logic</h3>
+    <p style="color:#ccc; font-family:'Lora'; font-size:0.95rem; text-align:center; margin-bottom:40px; line-height:1.6; max-width:750px; margin-left:auto; margin-right:auto;">
+      Projections based on real-world commercial real estate landscapes in Kahawa West. To preserve our premium positioning and protect the sanctuary environment from street-level disruption, we plan to secure a raw commercial shell and execute a 100% custom structural fit-out.
+    </p>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Asset Procurement (M-Pesa Automated Tables)</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">240,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Civil Custom Work & Structural Floor Leveling</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">120,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Sound Conditioning & Acoustic Privacy Partitions</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">100,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Custom Suspended Task & Ambient Lighting Infrastructure</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">80,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Security, Smart Integration Automation & CCTV</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">60,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Licensing, Legal Framework & All-Risk Insurance</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">65,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Premises Entry & Location Leasehold (Rent Cap 20k)</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">60,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Ops Launch Marketing & Brand Collateral</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">15,000</span></div>
+    <div class="mobile-row"><span style="color:#e2d1a4; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase;">Operational Reserves & Working Capital Runway Buffer</span><span style="color:#fff; font-weight:900; font-size:1.1rem;">210,000</span></div>
+    <div class="mobile-row" style="border-bottom:2px solid #71e440; padding-bottom:30px;"><span style="color:#71e440; font-weight:900; letter-spacing:2px;">PHASE I CAPEX TOTAL</span><span style="color:#71e440; font-weight:900; font-size:1.3rem;">KSh 1,000,000</span></div>
+
+    <div class="rev-total-highlight">
+      <span style="text-transform:uppercase; font-size:0.8rem; letter-spacing:4px; font-weight:900;">Projected Monthly Gross (Baseline)</span>
+      <div style="font-size:3rem; margin-top:15px; font-weight:900;">KSh 100,000</div>
+      <p style="color:#000; font-family:'Alata'; font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; margin-top:12px; font-weight:900; max-width:650px; margin-left:auto; margin-right:auto; line-height:1.4;">
+        Scalable to KSh 150,000 - KSh 200,000. Revenue scaling is driven explicitly by structured acquisition of active monthly recurring members and training program enrollments.
+      </p>
+    </div>
+
+    <div style="margin:50px 0; text-align:left; background:rgba(255,255,255,0.02); padding:40px; border:1px solid rgba(226,209,164,0.1);">
+      <h4 style="color:#e2d1a4; font-family:'Alata'; font-size:1.1rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:20px;">Partnership & Financial Mechanism</h4>
+      <p style="color:#fff; font-family:'Lora'; font-size:1rem; line-height:1.7; margin-bottom:15px;"><strong>25% Monthly Revenue Share.</strong> Paid directly from monthly gross returns until a <strong>1.5x payout cap is satisfied (Total KSh 1,500,000).</strong></p>
+      <p style="color:#ccc; font-family:'Lora'; font-size:0.95rem; line-height:1.7; margin-bottom:15px;"><strong>Clean, Time-Bound Structure:</strong> No long-term brand equity is permanently retained by backers—ensuring a highly liquid, transparent exit strategy.</p>
+      <p style="color:#71e440; font-family:'Lora'; font-size:0.95rem; line-height:1.7; font-weight:bold;"><strong>Right of First Consideration:</strong> Phase I investors retain first-right priority for all upcoming branch expansions and secondary regional financing structures before they open to the wider public.</p>
+    </div>
+
+    <div class="call-action-block">
+      <h3 style="color:#fff; font-family:'Alata'; letter-spacing:3px; font-size:1.5rem;">READY TO BACK THE VISION?</h3>
+      <p style="color:#fff; opacity:0.9; font-size:1rem; margin-top:15px; font-family:'Cardo'; font-style:italic; margin-bottom:30px;">Direct line to get TheQueSpot_Prospectus.</p>
+      <a href="tel:+254727405842" class="btn-phone" aria-label="Call Mfalme Ukweli directly">PLACE DIRECT CALL</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STRATEGIC SURVEY ===================== -->
+<section id="strategic-survey">
+  <div style="width:90%; max-width:800px; margin:0 auto;">
+    <span style="letter-spacing:5px; font-size:0.7rem; font-family:'Alata'; text-transform:uppercase; font-weight:900;">building for the future</span>
+    <h2 style="font-family:'Alata'; font-size:2.2rem; margin:15px 0; text-transform:uppercase; letter-spacing:2px;">The Next 23 Years</h2>
+    <ul class="future-line">
+      <li>I've built</li>
+      <li>I've lost</li>
+      <li>I've learned</li>
+      <li>I've rebuilt</li>
+    </ul>
+    <div style="font-family:'Lora'; opacity:0.9; font-size:1.1rem; line-height:1.6; margin-bottom:40px;">
+      <p>For over two decades, this has been my reality. Now I am stepping into a new phase. Your perspective matters.</p>
+    </div>
+    <button class="trigger-btn" id="survey-toggle" onclick="document.getElementById('survey-content').style.display='block'; this.style.display='none';">Join Me</button>
+    <div class="privacy-trigger" onclick="var p=document.getElementById('privacy-content'); p.style.display=(p.style.display=='block'?'none':'block');">Privacy Policy & Transparency [+]</div>
+    <div id="privacy-content">
+      <p><strong>Your Trust, My Foundation.</strong></p>
+      <p>Information shared through the "The Next 23 Years" survey is used exclusively to refine my content and service offerings. No data is sold or shared with third parties.</p>
+      <ul>
+        <li><strong>Communication:</strong> WhatsApp messages initiated through this site are direct and personal.</li>
+        <li><strong>Cookies:</strong> We use minimal analytics to understand how "Witnesses" and potential partners interact with this journey.</li>
+        <li><strong>Rights:</strong> You may request the removal of your shared views at any time by reaching out directly.</li>
+      </ul>
+    </div>
+    <div id="survey-content">
+      <div class="s-box">
+        <label class="s-input-label">Where do you know me from?</label>
+        <div class="social-chips">
+          <div class="chip-option" onclick="this.classList.toggle('selected')">Facebook</div>
+          <div class="chip-option" onclick="this.classList.toggle('selected')">Instagram</div>
+          <div class="chip-option" onclick="this.classList.toggle('selected')">TikTok</div>
+          <div class="chip-option" onclick="this.classList.toggle('selected')">YouTube</div>
+          <div class="chip-option" onclick="this.classList.toggle('selected')">Witness Since 2008</div>
+        </div>
+        <label class="s-input-label">Our Connection:</label>
+        <select id="final-rel" class="s-field">
+          <option value="Online Follower">General Online Follower</option>
+          <option value="Former Customer">Former Customer / Client</option>
+          <option value="Supplier/Partner">Supplier / Business Partner</option>
+          <option value="Friend/Associate">Friend / Personal Associate</option>
+          <option value="New Connection">New Connection</option>
+        </select>
+        <label class="s-input-label">Where can my impact serve best?</label>
+        <select id="final-ind" class="s-field">
+          <option value="Premium Lifestyle & Recreation">Premium Lifestyle & Recreation</option>
+          <option value="Business Foundations Consulting">Business Foundations Consulting</option>
+          <option value="Digital Brand Architecture">Digital Brand Architecture</option>
+          <option value="Full-Time Podcastor & Speaker">Full-Time Podcastor & Speaker</option>
+        </select>
+        <label class="s-input-label">Personal Views...</label>
+        <textarea id="final-adv" class="s-field" rows="3" placeholder="Share your thoughts..."></textarea>
+        <button type="button" class="s-btn-final" onclick="
+          var selected=Array.from(document.querySelectorAll('.chip-option.selected')).map(el=>el.innerText).join(', ');
+          var rel=document.getElementById('final-rel').value;
+          var ind=document.getElementById('final-ind').value;
+          var adv=document.getElementById('final-adv').value;
+          var msg=encodeURIComponent('Mfalme Ukweli (James Waweru.k), I am rooting for you.\n\nPlatforms: '+(selected||'Direct')+'\nRelationship: '+rel+'\nSuggested Focus: '+ind+'\n\nViews: '+(adv||'Witnessing the journey.'));
+          window.open('https://wa.me/254727405842?text='+msg,'_blank');
+        ">Add Your Voice</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONNECT / FOOTER ===================== -->
+<footer id="connect">
+  <div class="final-container">
+    <div class="blueprint-media">
+      <div class="media-card-premium">
+        <div class="card-label">Broadcasting</div>
+        <img src="https://i.postimg.cc/HL2hMTcy/Whats-App-Image-2026-03-27-at-5-41-46-PM.jpg" class="card-icon-square" alt="Mfalme Ukweli TV">
+        <div class="card-title">Mfalme Ukweli TV</div>
+        <p class="card-quote">"Sharing my experiences as a son, man, father, husband, and entrepreneur."</p>
+        <a href="https://youtu.be/ICu23fyda6c" class="btn-premium" target="_blank">Subscribe</a>
+      </div>
+      <div class="media-card-premium">
+        <div class="card-label">Production</div>
+        <img src="https://i.postimg.cc/BbQsFhnZ/ATW.jpg" class="card-icon-square" alt="ArtTheWorkshop Podcast">
+        <div class="card-title">PODCAST</div>
+        <p class="card-quote">"Kenya's unapologetically honest entrepreneurship podcast."</p>
+        <a href="https://youtu.be/PdMsuaS6T9w?si=TOHX89nlXpJoh8xD" class="btn-premium" target="_blank">Latest Episode</a>
+      </div>
+    </div>
+
+    <a href="https://www.youtube.com/@sharedmomentswithjustus" class="btn-shared-moments" target="_blank">
+      <span>UPCOMING FEATURE</span>
+      MFALME UKWELI × SHARED MOMENTS WITH JUSTUS
+    </a>
+
+    <div id="investorgate">
+      <a href="#thequespot-master" class="btn-partner-ukweli">PARTNER WITH MFALME UKWELI</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://tinyurl.com/4js9mp6z" class="social-link" target="_blank">FACEBOOK</a>
+      <a href="https://tinyurl.com/yprpx49z" class="social-link" target="_blank">TIKTOK</a>
+      <a href="https://tinyurl.com/yzpvyath" class="social-link" target="_blank">LINKEDIN</a>
+    </div>
+
+    <div class="footer-copy">&copy; 2026 MFALME UKWELI. ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script>
+// GLOBAL VAULT LOGIC
+window.openVault = function(zoneId) {
+  var bZone = document.getElementById('builder-zone');
+  var fZone = document.getElementById('fixer-zone');
+  var vaultTitle = document.querySelector('.vault-title');
+  if (bZone) bZone.style.display = 'none';
+  if (fZone) fZone.style.display = 'none';
+  var target = document.getElementById(zoneId);
+  if (target) {
+    target.style.display = 'block';
+    setTimeout(function() {
+      if (vaultTitle) vaultTitle.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+};
+
+// NAV TOGGLE
+function toggleK(show) {
+  document.getElementById('k-menu-overlay').style.display = show ? 'flex' : 'none';
+}
+
+// SCROLL INDICATOR
+window.onscroll = function() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  var indicator = document.getElementById('k-scroll-indicator');
+  if (indicator) indicator.style.width = scrolled + '%';
+};
+
+// TESTIMONIAL CAROUSEL
+(function() {
+  var cards = document.querySelectorAll('.t-card');
+  if (!cards.length) return;
+  var currentIndex = 0;
+  var timer;
+  window.changeT = function(step) {
+    if (timer) clearInterval(timer);
+    cards[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + step + cards.length) % cards.length;
+    cards[currentIndex].classList.add('active');
+    startTimer();
+  };
+  function startTimer() {
+    timer = setInterval(function() { changeT(1); }, 6000);
+  }
+  startTimer();
+})();
+
+// QUE SPOT TOGGLE
+document.getElementById('triggerBtn').addEventListener('click', function() {
+  var vault = document.getElementById('investorprospectus');
+  if (vault.style.display === 'block') {
+    vault.style.display = 'none';
+    this.innerHTML = 'Access Partnership Idea';
+    this.setAttribute('aria-expanded', 'false');
+  } else {
+    vault.style.display = 'block';
+    this.innerHTML = 'Close';
+    this.setAttribute('aria-expanded', 'true');
+    vault.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+</script>
+
+</body>
+</html>
