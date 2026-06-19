@@ -4,17 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mfalme Ukweli | Business Foundations</title>
+<meta name="description" content="After 23 years, my business empire crumbled. So I bought a Matatu. Pick your route — strategic blueprints for founders who want to move beyond Trial & Hoping.">
+
+<!-- SEO: robots + canonical -->
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.mfalmeukweli.co.ke/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon-Mfalme_Ukweli_.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- OG / Twitter Meta -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.mfalmeukweli.co.ke/">
 <meta property="og:title" content="Mfalme Ukweli | Business Foundations">
-<meta property="og:description" content="Distill 20 years of business experience into a legacy that lasts. Build right, from day one.">
+<meta property="og:description" content="After 23 years, my business empire crumbled. So I bought a Matatu. Pick your route — strategic blueprints for founders who want to move beyond Trial & Hoping.">
 <meta property="og:image" content="https://i.postimg.cc/BnvXPQNM/file-00000000fbe071f597f2ce9e1c59e661.jpg">
+<meta property="og:locale" content="en_KE">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://www.mfalmeukweli.co.ke/">
 <meta property="twitter:title" content="Mfalme Ukweli | Business Foundations">
-<meta property="twitter:description" content="Strategic blueprints for founders who want to move beyond 'Trial & Hoping'.">
+<meta property="twitter:description" content="After 23 years, my business empire crumbled. So I bought a Matatu. Pick your route.">
 <meta property="twitter:image" content="https://i.postimg.cc/BnvXPQNM/file-00000000fbe071f597f2ce9e1c59e661.jpg">
 
 <!-- Preloads -->
@@ -378,85 +388,96 @@ nav {
 }
 
 /* =============================================
-   THE BATTLE
+   THE BATTLE → DIGITAL MATATU
    ============================================= */
 #thebattle {
   background-color: #000;
-  padding: 100px 0;
+  padding: 110px 0 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: none !important;
   margin: 0 !important;
 }
-.battle-grid {
-  display: flex;
-  gap: 35px;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 90%;
-  max-width: 1200px;
+.matatu-intro { width: 90%; max-width: 760px; text-align: center; margin-bottom: 70px; }
+.matatu-tag {
+  font-family: 'Alata', sans-serif; color: #8B0000; font-size: 0.75rem;
+  letter-spacing: 5px; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 20px;
 }
-.path-container { flex: 1; min-width: 320px; display: flex; flex-direction: column; }
-.path-headline {
-  font-family: 'Alata', sans-serif;
-  color: #8B0000;
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-  text-align: center;
-  min-height: 3em;
+.matatu-headline {
+  font-family: 'Alata', sans-serif; color: #fff; font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.25; letter-spacing: 0.5px; margin-bottom: 22px;
 }
-.battle-card {
-  position: relative;
-  width: 100%;
-  min-height: 550px;
-  border: 1px solid rgba(226,209,164,0.1);
-  display: flex;
-  flex-direction: column;
+.matatu-headline em { color: #e2d1a4; font-style: normal; }
+.matatu-sub {
+  font-family: 'Lora', serif; color: #ccc; font-size: 1.15rem; line-height: 1.8;
+  max-width: 680px; margin: 0 auto;
+}
+.matatu-sub strong { color: #e2d1a4; font-weight: 700; }
+.matatu-driver {
+  font-family: 'Lora', serif; font-style: italic; color: #fff; font-size: 1.1rem;
+  line-height: 1.8; max-width: 680px; margin: 28px auto 0; opacity: 0.92;
+}
+.matatu-cta-line {
+  font-family: 'Alata', sans-serif; color: #e2d1a4; letter-spacing: 2px;
+  text-transform: uppercase; font-size: 0.85rem; margin-top: 32px;
+}
+
+/* Route list — Menu Card style */
+.route-list {
+  width: 90%; max-width: 880px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.route-row {
+  display: flex; flex-direction: column;
+  border: 1px solid rgba(226,209,164,0.15);
+  border-top: none;
+  padding: 44px 45px;
   text-decoration: none;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.16,1,0.3,1);
-  background-size: cover;
-  background-position: center;
+  transition: background 0.35s ease, border-color 0.35s ease;
 }
-.battle-card::before {
-  content: "";
-  position: absolute; top:0; left:0; width:100%; height:100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.95));
-  z-index: 1;
+.route-list .route-row:first-child { border-top: 1px solid rgba(226,209,164,0.15); }
+.route-row:hover { background: rgba(226,209,164,0.04); border-color: rgba(226,209,164,0.35); }
+
+.route-top { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 14px; }
+.route-number { font-family: 'Alata', sans-serif; color: #8B0000; font-size: 0.8rem; letter-spacing: 3px; }
+.route-title { font-family: 'Alata', sans-serif; color: #fff; font-size: 1.45rem; letter-spacing: 1px; text-transform: uppercase; }
+.route-title span { color: #e2d1a4; }
+.route-stage { font-family: 'Lora', serif; font-style: italic; color: #999; font-size: 0.95rem; white-space: nowrap; }
+
+.route-for { font-family: 'Lora', serif; color: #ddd; font-size: 1.05rem; line-height: 1.7; margin-bottom: 12px; }
+.route-for strong { color: #e2d1a4; font-weight: 700; }
+.route-dest { font-family: 'Lora', serif; color: #aaa; font-size: 0.98rem; line-height: 1.7; margin-bottom: 18px; }
+.route-dest strong { color: #fff; font-weight: 700; }
+
+.route-warning {
+  font-family: 'Alata', sans-serif; font-size: 0.78rem; letter-spacing: 1px;
+  color: #8B0000; border-left: 2px solid #8B0000; padding-left: 14px;
+  margin-bottom: 28px; line-height: 1.6; text-transform: none;
 }
-.path-gold-bg    { background-image: url('https://i.postimg.cc/3wbJJrf1/start-here.png'); }
-.path-crimson-bg { background-image: url('https://i.postimg.cc/tgK4KYxv/weight-of-business.png'); }
-.card-inner {
-  position: relative; z-index: 2;
-  padding: 60px 40px; height: 100%;
-  display: flex; flex-direction: column; justify-content: center; text-align: left;
+
+.route-action {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: 12px;
+  font-family: 'Alata', sans-serif; font-size: 0.85rem; letter-spacing: 2px;
+  text-transform: uppercase; padding: 16px 32px; border: 1px solid #e2d1a4;
+  color: #e2d1a4; transition: 0.35s;
 }
-.path-gold-bg    h4 { color: #e2d1a4; }
-.path-crimson-bg h4 { color: #8B0000; }
-.card-inner h4 { font-family: 'Alata', sans-serif; letter-spacing: 3px; text-transform: uppercase; font-size: 1.1rem; margin-bottom: auto; }
-.battle-card p { font-family: 'Lora', serif; font-size: 1.15rem; color: #ccc; line-height: 1.7; margin: 40px 0; }
-.path-gold-bg    p strong { color: #e2d1a4; }
-.path-crimson-bg p strong { color: #8B0000; }
-.battle-btn {
-  margin-top: auto; padding: 20px; text-align: center;
-  font-family: 'Alata', sans-serif; font-weight: 400;
-  text-transform: uppercase; letter-spacing: 4px; font-size: 0.8rem;
-  transition: 0.3s; border: none;
-}
-.btn-gold    { background: #e2d1a4; color: #000; }
-.btn-crimson { background: #8B0000; color: #fff !important; }
-.battle-card:hover { transform: translateY(-10px); border-color: rgba(226,209,164,0.4); }
+.route-row:hover .route-action { background: #e2d1a4; color: #000; }
+.route-action span { transition: transform 0.3s; }
+.route-row:hover .route-action span { transform: translateX(5px); }
+
+.route-row.route-highway .route-number,
+.route-row.route-highway .route-warning { color: #71e440; }
+.route-row.route-highway .route-action { border-color: #71e440; color: #71e440; }
+.route-row.route-highway:hover .route-action { background: #71e440; color: #000; }
+.route-row.route-highway:hover { border-color: rgba(113,228,64,0.4); }
+
 @media (max-width: 768px) {
-  .battle-grid { width: 92%; gap: 40px; }
-  .path-container { min-width: 100%; }
-  .path-headline { min-height: auto; margin-bottom: 15px; font-size: 1rem; }
-  .battle-card { min-height: 500px; }
-  .card-inner { padding: 40px 25px; text-align: center; }
-  .card-inner h4 { margin-bottom: 20px; }
+  .matatu-intro { margin-bottom: 50px; }
+  .route-row { padding: 32px 24px; }
+  .route-title { font-size: 1.2rem; }
+  .route-top { flex-direction: column; gap: 6px; }
+  .route-action { width: 100%; justify-content: center; }
 }
 
 /* =============================================
@@ -464,7 +485,7 @@ nav {
    ============================================= */
 #booksvault {
   background: #000;
-  padding: 80px 5%;
+  padding: 110px 5% 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -472,60 +493,71 @@ nav {
   box-sizing: border-box;
   color: #fff;
 }
-.auth-header { text-align: center; margin-bottom: 30px; width: 100%; white-space: nowrap; }
+.auth-header { text-align: center; margin-bottom: 50px; width: 100%; white-space: nowrap; }
 .auth-header span {
-  color: #C5A059; letter-spacing: 5px; font-size: 0.75rem;
+  color: #C5A059; letter-spacing: 6px; font-size: 0.72rem;
   text-transform: uppercase; font-family: 'Alata', sans-serif; font-weight: 400;
   display: inline-block;
+  position: relative; padding-bottom: 18px;
+}
+.auth-header span::after {
+  content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 40px; height: 1px; background: rgba(197,160,89,0.4);
 }
 .bridge-container {
-  width: 100%; max-width: 800px; margin-bottom: 20px;
+  width: 100%; max-width: 760px; margin-bottom: 30px;
   position: relative; display: flex; flex-direction: column; align-items: center;
 }
-.t-track { width: 100%; min-height: 280px; display: flex; align-items: center; justify-content: center; position: relative; }
+.t-track { width: 100%; min-height: 260px; display: flex; align-items: center; justify-content: center; position: relative; }
 .t-card {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   width: 100%; opacity: 0; visibility: hidden; transition: opacity 0.6s ease;
   text-align: center; z-index: 1;
 }
 .t-card.active { opacity: 1; visibility: visible; z-index: 2; }
-.t-photo { width: 80px; height: 80px; border-radius: 20%; border: 2px solid #C5A059; margin-bottom: 15px; object-fit: cover; }
-.t-text { font-family: 'Lora', serif; font-style: italic; font-size: 1.15rem; line-height: 1.6; margin-bottom: 10px; padding: 0 15px; }
-.t-credit { font-family: 'Alata', sans-serif; color: #C5A059; font-weight: 400; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; }
-.t-nav { cursor: pointer; color: #C5A059; font-size: 1.5rem; padding: 10px 20px; z-index: 10; transition: 0.3s; user-select: none; }
-.t-nav:hover { color: #fff; }
-.desktop-nav { position: absolute; width: 110%; display: flex; justify-content: space-between; top: 50%; transform: translateY(-50%); }
-.mobile-nav-box { display: none; justify-content: center; gap: 50px; margin-top: 30px; margin-bottom: 10px; }
+.t-photo { width: 72px; height: 72px; border-radius: 50%; border: 1px solid #C5A059; margin-bottom: 18px; object-fit: cover; }
+.t-text { font-family: 'Lora', serif; font-style: italic; font-size: 1.1rem; line-height: 1.65; margin-bottom: 14px; padding: 0 20px; color: #eee; }
+.t-credit { font-family: 'Alata', sans-serif; color: #C5A059; font-weight: 400; text-transform: uppercase; font-size: 0.68rem; letter-spacing: 2.5px; }
+.t-nav { cursor: pointer; color: #C5A059; font-size: 1.3rem; padding: 10px 20px; z-index: 10; transition: 0.3s; user-select: none; opacity: 0.6; }
+.t-nav:hover { color: #fff; opacity: 1; }
+.desktop-nav { position: absolute; width: 112%; display: flex; justify-content: space-between; top: 50%; transform: translateY(-50%); }
+.mobile-nav-box { display: none; justify-content: center; gap: 60px; margin-top: 20px; margin-bottom: 10px; }
 
-.vault-title { text-align: center; margin: 0 0 40px 0; width: 100%; padding-top: 40px; border-top: 1px solid rgba(197,160,89,0.2); }
-.vault-title h2 { font-family: 'Alata', sans-serif; font-size: clamp(2rem,8vw,3rem); letter-spacing: 6px; text-transform: uppercase; }
+.vault-title { text-align: center; margin: 0 0 60px 0; width: 100%; padding-top: 60px; border-top: 1px solid rgba(197,160,89,0.15); }
+.vault-title h2 { font-family: 'Alata', sans-serif; font-size: clamp(1.9rem,7vw,2.7rem); letter-spacing: 7px; text-transform: uppercase; }
 
-#builder-zone { display: block; width: 100%; max-width: 1000px; animation: fadeIn 0.8s ease; }
-#fixer-zone   { display: none;  width: 100%; max-width: 1000px; animation: fadeIn 0.8s ease; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+#builder-zone { display: block; width: 100%; max-width: 880px; animation: fadeIn 0.8s ease; }
+#fixer-zone   { display: none;  width: 100%; max-width: 880px; animation: fadeIn 0.8s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-.path-narrative { font-family: 'Alata', sans-serif; color: #C5A059; text-transform: uppercase; letter-spacing: 3px; text-align: center; margin-bottom: 25px; font-size: 0.9rem; }
+.path-narrative {
+  font-family: 'Alata', sans-serif; color: #C5A059; text-transform: uppercase;
+  letter-spacing: 3.5px; text-align: center; margin-bottom: 35px; font-size: 0.82rem;
+}
 
 .book-card {
-  width: 100%; display: flex; align-items: center; gap: 40px;
-  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);
-  padding: 40px; margin-bottom: 30px; box-sizing: border-box;
+  width: 100%; display: flex; align-items: center; gap: 60px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.025), rgba(255,255,255,0.005));
+  border: 1px solid rgba(197,160,89,0.12);
+  padding: 55px; margin-bottom: 30px; box-sizing: border-box;
 }
-.book-img { width: 100%; max-width: 240px; filter: drop-shadow(0 15px 30px #000); }
-.book-info h2 { font-family: 'Alata', sans-serif; font-size: 1.6rem; margin-bottom: 15px; }
-.book-info p { color: #aaa; margin-bottom: 25px; line-height: 1.6; font-family: 'Lora', serif; }
+.book-img { width: 100%; max-width: 210px; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.6)); flex-shrink: 0; }
+.book-info { flex: 1; }
+.book-info h2 { font-family: 'Alata', sans-serif; font-size: 1.55rem; margin-bottom: 16px; letter-spacing: 0.5px; line-height: 1.3; }
+.book-info p { color: #999; margin-bottom: 28px; line-height: 1.6; font-family: 'Lora', serif; }
 .btn-buy {
-  display: inline-block; padding: 16px 35px; background: #8B0000; color: #fff !important;
+  display: inline-block; padding: 17px 38px; background: #8B0000; color: #fff !important;
   text-decoration: none; font-family: 'Alata', sans-serif; font-weight: 400;
-  text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;
+  text-transform: uppercase; letter-spacing: 2.5px; font-size: 0.78rem;
+  transition: 0.3s;
 }
-.btn-buy:hover { background: #a00000; }
+.btn-buy:hover { background: #a00000; transform: translateY(-2px); }
 
 @media (max-width: 768px) {
   .desktop-nav { display: none; }
   .mobile-nav-box { display: flex; }
-  .book-card { flex-direction: column; text-align: center; }
-  .auth-header span { font-size: 0.65rem; letter-spacing: 3px; }
+  .book-card { flex-direction: column; text-align: center; padding: 40px 28px; gap: 30px; }
+  .auth-header span { font-size: 0.62rem; letter-spacing: 3px; }
 }
 
 /* =============================================
@@ -593,92 +625,54 @@ nav {
 }
 
 /* =============================================
-   STRATEGIC SURVEY
-   ============================================= */
-#strategic-survey {
-  background: #002366;
-  padding: 100px 0;
-  text-align: center;
-  color: #fff;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-.future-line {
-  display: flex; justify-content: center; gap: 8px; flex-wrap: nowrap;
-  list-style: none; padding: 0; margin: 30px 0; font-family: 'Alata', sans-serif;
-  overflow-x: hidden; align-items: center;
-}
-.future-line li { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: #fff; white-space: nowrap; display: flex; align-items: center; }
-.future-line li:not(:last-child)::after {
-  content: ""; margin-left: 8px; width: 3px; height: 22px; display: inline-block;
-  background: linear-gradient(to bottom, #000 33.3%, #BB0000 33.3% 66.6%, #006600 66.6%);
-}
-.social-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; justify-content: center; }
-.chip-option { padding: 10px 18px; border: 1px solid rgba(0,35,102,0.2); border-radius: 4px; font-family: 'Alata'; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.3s; background: #f8f9fa; color: #002366; }
-.chip-option.selected { background: #002366; color: #fff; border-color: #002366; }
-#survey-content { display: none; margin-top: 30px; }
-.s-box { background: #fff; padding: 40px; text-align: left; max-width: 600px; margin: 0 auto; color: #000; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-.s-input-label { display: block; font-family: 'Alata'; color: #002366; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; }
-.s-field { width: 100%; padding: 12px; background: #f8f9fa; border: 1px solid #002366; font-family: 'Lora'; font-size: 1rem; margin-bottom: 20px; box-sizing: border-box; }
-.trigger-btn { background: #e2d1a4; color: #002366; border: none; padding: 20px 40px; font-family: 'Alata'; font-weight: 900; text-transform: uppercase; cursor: pointer; letter-spacing: 4px; transition: 0.3s; }
-.trigger-btn:hover { background: #d4c090; }
-.s-btn-final { width: 100%; background: #002366; color: #fff; border: none; padding: 18px; font-family: 'Alata'; font-weight: 900; text-transform: uppercase; cursor: pointer; letter-spacing: 3px; }
-.s-btn-final:hover { background: #003399; }
-.privacy-trigger { font-family: 'Alata'; color: #e2d1a4; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; margin: 25px auto 0 auto; opacity: 0.6; transition: 0.3s; display: block; width: fit-content; }
-.privacy-trigger:hover { opacity: 1; }
-#privacy-content { display: none; background: rgba(255,255,255,0.05); padding: 30px; max-width: 700px; margin: 20px auto; text-align: left; border: 1px solid rgba(226,209,164,0.2); }
-#privacy-content p, #privacy-content li { font-family: 'Lora'; font-size: 0.85rem; color: #ccc; line-height: 1.6; margin-bottom: 15px; }
-
-@media (min-width: 769px) {
-  .future-line li { font-size: 1.1rem; letter-spacing: 2px; }
-  .future-line { gap: 15px; }
-  .future-line li:not(:last-child)::after { height: 28px; margin-left: 15px; }
-}
-
-/* =============================================
    CONNECT / FOOTER
    ============================================= */
 #connect {
-  background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)),
+  background: linear-gradient(rgba(0,0,0,0.93), rgba(0,0,0,0.93)),
               url('https://i.postimg.cc/43qj68dJ/mfalme-ukweli.webp') bottom / cover;
-  padding: 100px 0 40px 0;
+  padding: 120px 0 50px 0;
   display: flex; flex-direction: column; align-items: center;
   width: 100%; color: #fff;
 }
-.final-container { width: 90%; max-width: 950px; text-align: center; }
+.final-container { width: 90%; max-width: 920px; text-align: center; }
+
 .blueprint-media {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 50px;
 }
 .media-card-premium {
-  background: rgba(255,255,255,0.03); border: 1px solid rgba(226,209,164,0.1);
-  padding: 40px 20px; display: flex; flex-direction: column; align-items: center;
-  transition: 0.4s ease; min-height: 400px; justify-content: center;
-  backdrop-filter: blur(5px); gap: 15px;
+  background: rgba(255,255,255,0.025); border: 1px solid rgba(226,209,164,0.12);
+  padding: 44px 26px 36px; display: flex; flex-direction: column; align-items: center;
+  transition: 0.4s ease; backdrop-filter: blur(5px); gap: 16px;
 }
-.media-card-premium:hover { border-color: rgba(226,209,164,0.4); transform: translateY(-5px); }
-.card-icon-square { width: 75px; height: 75px; border: 1px solid #e2d1a4; margin-bottom: 10px; object-fit: cover; }
-.card-label { font-family: 'Alata'; color: #e2d1a4; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 900; }
-.card-title { font-family: 'Alata'; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; color: #fff; }
-.card-quote { font-family: 'Lora'; font-style: italic; font-size: 0.95rem; color: #ccc; line-height: 1.5; max-width: 280px; }
-.btn-premium { display: inline-block; padding: 12px 25px; background: #8B0000; color: #fff !important; text-decoration: none; font-family: 'Alata'; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem; width: 80%; }
+.media-card-premium:hover { border-color: rgba(226,209,164,0.4); transform: translateY(-6px); }
+.card-icon-square { width: 70px; height: 70px; border: 1px solid #e2d1a4; object-fit: cover; }
+.card-label { font-family: 'Alata'; color: #e2d1a4; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; opacity: 0.85; }
+.card-title { font-family: 'Alata'; font-size: 1.15rem; text-transform: uppercase; letter-spacing: 2px; color: #fff; }
+.card-quote { font-family: 'Lora'; font-style: italic; font-size: 0.92rem; color: #bbb; line-height: 1.55; max-width: 270px; flex-grow: 1; display: flex; align-items: center; }
+.btn-premium {
+  display: inline-block; padding: 13px 25px; background: #8B0000; color: #fff !important;
+  text-decoration: none; font-family: 'Alata'; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; font-size: 0.72rem; width: 100%; transition: 0.3s;
+}
 .btn-premium:hover { background: #a00000; }
 
 .btn-shared-moments {
   display: block;
   background: linear-gradient(135deg, #2596be 0%, #5f1c52 100%);
   border: 1px solid #e2d1a4; color: #fff !important;
-  padding: 25px; text-decoration: none; font-family: 'Alata';
-  font-weight: 900; letter-spacing: 3px; margin: 40px auto;
-  max-width: 550px; text-transform: uppercase; font-size: 1rem; transition: 0.4s;
+  padding: 26px; text-decoration: none; font-family: 'Alata';
+  font-weight: 700; letter-spacing: 3px; margin: 0 auto 50px;
+  max-width: 550px; text-transform: uppercase; font-size: 0.95rem; transition: 0.4s;
 }
-.btn-shared-moments:hover { opacity: 0.85; }
-.btn-shared-moments span { color: #fff; display: block; font-size: 0.7rem; margin-bottom: 8px; letter-spacing: 4px; opacity: 0.9; }
+.btn-shared-moments:hover { opacity: 0.85; transform: translateY(-2px); }
+.btn-shared-moments span { color: #fff; display: block; font-size: 0.65rem; margin-bottom: 9px; letter-spacing: 4px; opacity: 0.85; }
 
-#investorgate { width: 100%; max-width: 1000px; margin-top: 40px; text-align: center; }
+#investorgate { width: 100%; max-width: 1000px; margin-bottom: 50px; text-align: center; }
 .btn-partner-ukweli {
   position: relative; display: inline-block; padding: 22px 45px;
   background: #000; color: #e2d1a4 !important; border: 2px solid #e2d1a4;
   text-decoration: none; font-family: 'Alata', sans-serif; font-weight: 400;
-  font-size: 0.9rem; letter-spacing: 4px; text-transform: uppercase;
+  font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase;
   overflow: hidden; transition: all 0.4s ease; box-shadow: 0 0 15px rgba(226,209,164,0.1);
 }
 .btn-partner-ukweli::before {
@@ -688,28 +682,97 @@ nav {
 }
 @keyframes light-beam { 0% { left: -150%; } 50% { left: 150%; } 100% { left: 150%; } }
 
-.social-links { display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }
-.social-link { font-family: 'Alata'; color: #fff; text-decoration: none; font-size: 0.85rem; text-transform: uppercase; font-weight: 700; letter-spacing: 2px; border-bottom: 2px solid rgba(226,209,164,0.3); padding-bottom: 4px; }
+.social-links { display: flex; justify-content: center; gap: 32px; margin-bottom: 8px; flex-wrap: wrap; }
+.social-link { font-family: 'Alata'; color: #ddd; text-decoration: none; font-size: 0.78rem; text-transform: uppercase; font-weight: 700; letter-spacing: 2px; border-bottom: 1px solid rgba(226,209,164,0.25); padding-bottom: 5px; transition: 0.3s; }
 .social-link:hover { color: #e2d1a4; border-color: #e2d1a4; }
 
-.footer-copy { color: rgba(255,255,255,0.2); font-size: 0.6rem; letter-spacing: 4px; text-transform: uppercase; font-family: 'Alata'; margin-top: 60px; }
+.footer-copy { color: rgba(255,255,255,0.18); font-size: 0.58rem; letter-spacing: 4px; text-transform: uppercase; font-family: 'Alata'; margin-top: 55px; }
 
 @media (max-width: 768px) {
-  #connect { background-attachment: scroll !important; }
-  .blueprint-media { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .media-card-premium { padding: 25px 10px; min-height: 350px; gap: 10px; }
-  .card-icon-square { width: 55px; height: 55px; }
+  #connect { background-attachment: scroll !important; padding: 90px 0 50px; }
+  .blueprint-media { grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 36px; }
+  .media-card-premium { padding: 28px 14px 22px; gap: 12px; }
+  .card-icon-square { width: 52px; height: 52px; }
   .card-title { font-size: 0.85rem; }
-  .card-quote { font-size: 0.75rem; line-height: 1.3; }
-  .btn-premium { width: 100%; padding: 12px 5px; font-size: 0.65rem; }
-  .btn-partner-ukweli { padding: 18px 30px; font-size: 0.75rem; letter-spacing: 2px; width: 90%; }
+  .card-quote { font-size: 0.74rem; line-height: 1.4; }
+  .btn-premium { padding: 12px 8px; font-size: 0.62rem; }
+  .btn-partner-ukweli { padding: 18px 30px; font-size: 0.72rem; letter-spacing: 2px; width: 90%; }
 }
-</style>
+
+/* =============================================
+   FLOATING SHARE WIDGET
+   ============================================= */
+#k-share-widget {
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226,209,164,0.2);
+}
+.share-btn {
+  width: 46px; height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  color: #e2d1a4; text-decoration: none;
+  transition: 0.3s; cursor: pointer; background: none; border: none;
+  position: relative;
+}
+.share-btn:hover { background: rgba(226,209,164,0.15); color: #fff; }
+.share-btn svg { width: 19px; height: 19px; fill: currentColor; }
+.share-copied-tag {
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  background: #e2d1a4; color: #000; font-family: 'Alata'; font-size: 0.6rem;
+  letter-spacing: 1px; text-transform: uppercase; padding: 6px 10px;
+  white-space: nowrap; margin-bottom: 8px; opacity: 0; pointer-events: none;
+  transition: opacity 0.25s;
+}
+.share-copied-tag.show { opacity: 1; }
+
+/* Desktop: horizontal bar fixed bottom-center */
+@media (min-width: 769px) {
+  #k-share-widget {
+    bottom: 24px; left: 50%; transform: translateX(-50%);
+    flex-direction: row; border-radius: 30px; overflow: hidden;
+  }
+}
+/* Mobile: vertical bar fixed right-center */
+@media (max-width: 768px) {
+  #k-share-widget {
+    top: 50%; right: 0; transform: translateY(-50%);
+    flex-direction: column; border-radius: 8px 0 0 8px; overflow: hidden;
+  }
+  .share-btn { width: 42px; height: 42px; }
+  .share-copied-tag { left: auto; right: 100%; bottom: auto; top: 50%; transform: translateY(-50%); margin-bottom: 0; margin-right: 8px; }
+}
+
 </head>
 <body>
 
 <!-- SCROLL INDICATOR -->
 <div id="k-scroll-indicator"></div>
+
+<!-- FLOATING SHARE WIDGET -->
+<div id="k-share-widget" aria-label="Share this page">
+  <a class="share-btn" target="_blank" rel="noopener" aria-label="Share on WhatsApp"
+     href="https://wa.me/?text=Mfalme%20Ukweli%20%E2%80%94%20After%2023%20years%2C%20my%20business%20empire%20crumbled.%20So%20I%20bought%20a%20Matatu.%20https%3A%2F%2Fwww.mfalmeukweli.co.ke%2F">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C11 9.2 10.6 8.2 10.4 7.8c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+  </a>
+  <a class="share-btn" target="_blank" rel="noopener" aria-label="Share on Facebook"
+     href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mfalmeukweli.co.ke%2F">
+    <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+  </a>
+  <a class="share-btn" target="_blank" rel="noopener" aria-label="Share on LinkedIn"
+     href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.mfalmeukweli.co.ke%2F">
+    <svg viewBox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.3 18.3V10H5.7v8.3h2.6zM7 8.9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11.3 9.4v-4.6c0-2.5-1.3-3.6-3.1-3.6a2.7 2.7 0 0 0-2.4 1.3V10h-2.6s0 7.7 0 8.3h2.6v-4.6c0-.3 0-.5.1-.7.2-.5.7-1.1 1.5-1.1 1.1 0 1.5.8 1.5 2v4.4h2.4z"/></svg>
+  </a>
+  <a class="share-btn" target="_blank" rel="noopener" aria-label="Share on TikTok" href="https://www.tiktok.com/upload?lang=en">
+    <svg viewBox="0 0 24 24"><path d="M16.6 5.8c-.9-.9-1.4-2.1-1.4-3.4h-3v13.6c0 1.4-1.1 2.5-2.5 2.5S7.2 16.4 7.2 15s1.1-2.5 2.5-2.5c.3 0 .5 0 .8.1V9.5c-.3 0-.5-.1-.8-.1-3.1 0-5.6 2.5-5.6 5.6S6.6 20.6 9.7 20.6s5.6-2.5 5.6-5.6V9.2c1.2.8 2.6 1.3 4.2 1.3V7.5c-1 0-1.9-.3-2.9-.9z"/></svg>
+  </a>
+  <button class="share-btn" type="button" aria-label="Copy link" onclick="copyShareLink(this)">
+    <span class="share-copied-tag">Copied!</span>
+    <svg viewBox="0 0 24 24"><path d="M3.9 12a3.1 3.1 0 0 1 3.1-3.1h4V7.1h-4a4.9 4.9 0 1 0 0 9.8h4v-1.8h-4A3.1 3.1 0 0 1 3.9 12zM9 13h6v-2H9v2zm8-5.9h-4v1.8h4a3.1 3.1 0 1 1 0 6.2h-4v1.8h4a4.9 4.9 0 1 0 0-9.8z"/></svg>
+  </button>
+</div>
 
 <!-- ===================== NAV ===================== -->
 <nav>
@@ -726,7 +789,7 @@ nav {
     <div class="k-links">
       <a href="#home"        onclick="toggleK(false)">HOME</a>
       <a href="#genesis"     onclick="toggleK(false)">GENESIS</a>
-      <a href="#thebattle"   onclick="toggleK(false)">BATTLE</a>
+      <a href="#thebattle"   onclick="toggleK(false)">THE MATATU</a>
       <a href="#booksvault"  onclick="toggleK(false)">VAULT</a>
       <a href="#thequespot-master" onclick="toggleK(false)">THE QUE SPOT</a>
       <a href="#connect"     onclick="toggleK(false)" style="color:#a8ff00;">CONNECT</a>
@@ -804,35 +867,62 @@ nav {
   </div>
 </section>
 
-<!-- ===================== THE BATTLE ===================== -->
-<section id="thebattle" aria-label="Choose Your Entrepreneurial Path">
-  <div class="battle-grid">
-    <div class="path-container">
-      <h3 class="path-headline">Building your first business?</h3>
-      <a href="#booksvault" class="battle-card path-gold-bg" onclick="window.openVault('builder-zone')">
-        <div class="card-inner">
-          <h4>I AM STARTING OUT</h4>
-          <p>I have the hunger, but I refuse to build a kiosk.<br><br>I want to build a kingdom on a <strong>Sovereign Foundation</strong> from Day 1.</p>
-          <div class="battle-btn btn-gold">START HERE</div>
-        </div>
-      </a>
-    </div>
-    <div class="path-container">
-      <h3 class="path-headline">Or fighting to save one?</h3>
-      <a href="#booksvault" class="battle-card path-crimson-bg" onclick="window.openVault('fixer-zone')">
-        <div class="card-inner">
-          <h4>I AM SAVING MY BUSINESS</h4>
-          <p>I've built something, but the walls are cracking.<br><br>I need the <strong>Blueprint</strong> to fix the foundation before the roof falls in.</p>
-          <div class="battle-btn btn-crimson">FIX MY BUSINESS</div>
-        </div>
-      </a>
-    </div>
+<!-- ===================== DIGITAL MATATU ===================== -->
+<section id="thebattle" aria-label="The Digital Matatu — Choose Your Route">
+  <div class="matatu-intro">
+    <span class="matatu-tag">The Digital Matatu</span>
+    <h2 class="matatu-headline">In March 2025, after 23 years, my business empire crumbled.<br>So, I bought a <em>Matatu.</em></h2>
+    <p class="matatu-sub">
+      But this Matatu is not for everyone. We don't do <strong>"Nyoka-Nyoka"</strong> here. We do not drift around the city for the sake of loud music, hype, or driving for fun. If you are boarding this vehicle, it means you have a specific destination to arrive at, a real fare you are willing to pay, and a serious mission to accomplish when you step out.
+    </p>
+    <p class="matatu-driver">
+      I am the driver. I know most potholes on the Kenyan routes, I know where the traffic traps are (Kanjo & Traffic Police, KRA) and I know exactly what makes a business engine knock.
+    </p>
+    <div class="matatu-cta-line">Pick your route below. Tell me exactly where you are dropping off.</div>
+  </div>
+
+  <div class="route-list">
+
+    <a href="#booksvault" class="route-row" onclick="window.openVault('builder-zone')">
+      <div class="route-top">
+        <span class="route-number">🚌 ROUTE 01 — <span class="route-title">THE LAUNCHPAD</span></span>
+        <span class="route-stage">Planning to Start</span>
+      </div>
+      <p class="route-for"><strong>Who this is for:</strong> You have the raw hunger, but you refuse to build a temporary kiosk. You want a sovereign foundation from Day 1.</p>
+      <p class="route-dest"><strong>The Destination:</strong> Going from an unvalidated idea to registering at Sheria House — with systems already in place.</p>
+      <div class="route-warning">THE CONDUCTOR'S WARNING — If you just want the "CEO" title without the work, do not board.</div>
+      <div class="route-action">Board Route 01 — Get the Startup Blueprint <span>→</span></div>
+    </a>
+
+    <a href="#booksvault" class="route-row" onclick="window.openVault('fixer-zone')">
+      <div class="route-top">
+        <span class="route-number">🚌 ROUTE 02 — <span class="route-title">THE SCALE-UP</span></span>
+        <span class="route-stage">In Business 2+ Years</span>
+      </div>
+      <p class="route-for"><strong>Who this is for:</strong> You survived the launch, but the survival mentality is still running your daily operations. The walls are cracking.</p>
+      <p class="route-dest"><strong>The Destination:</strong> Transitioning from a self-employed hustler to a systematic business leader with steady cash flow.</p>
+      <div class="route-warning">THE CONDUCTOR'S WARNING — Confirm the fare. Growth requires changing how you operate before the roof falls in.</div>
+      <div class="route-action">Board Route 02 — Fix My Foundation <span>→</span></div>
+    </a>
+
+    <a href="https://wa.me/254727405842?text=I'm%20on%20Route%2003%20%E2%80%94%20The%20Highway.%20Here's%20where%20I'm%20dropping%20off%3A" target="_blank" class="route-row route-highway">
+      <div class="route-top">
+        <span class="route-number">🚌 ROUTE 03 — <span class="route-title">THE HIGHWAY</span></span>
+        <span class="route-stage">In Business 5+ Years</span>
+      </div>
+      <p class="route-for"><strong>Who this is for:</strong> You are a seasoned veteran. You have built an empire, but you are looking for advanced scaling, automation, or structural preservation.</p>
+      <p class="route-dest"><strong>The Destination:</strong> Legacy building, strategic partnerships, high-tier networking, or learning how to dismantle or pivot a venture with dignity.</p>
+      <div class="route-warning">THE CONDUCTOR'S WARNING — No small-scale thinking allowed here. This is for the next 23 years.</div>
+      <div class="route-action">Tell Me Where You're Dropping Off <span>→</span></div>
+    </a>
+
   </div>
 </section>
 
 <!-- ===================== BOOKS VAULT ===================== -->
 <section id="booksvault" aria-label="Books Vault and Business Resources">
   <div class="auth-header"><span>ESTABLISHED AUTHORITY</span></div>
+
 
   <div class="bridge-container">
     <div class="desktop-nav">
@@ -971,71 +1061,6 @@ nav {
   </div>
 </section>
 
-<!-- ===================== STRATEGIC SURVEY ===================== -->
-<section id="strategic-survey">
-  <div style="width:90%; max-width:800px; margin:0 auto;">
-    <span style="letter-spacing:5px; font-size:0.7rem; font-family:'Alata'; text-transform:uppercase; font-weight:900;">building for the future</span>
-    <h2 style="font-family:'Alata'; font-size:2.2rem; margin:15px 0; text-transform:uppercase; letter-spacing:2px;">The Next 23 Years</h2>
-    <ul class="future-line">
-      <li>I've built</li>
-      <li>I've lost</li>
-      <li>I've learned</li>
-      <li>I've rebuilt</li>
-    </ul>
-    <div style="font-family:'Lora'; opacity:0.9; font-size:1.1rem; line-height:1.6; margin-bottom:40px;">
-      <p>For over two decades, this has been my reality. Now I am stepping into a new phase. Your perspective matters.</p>
-    </div>
-    <button class="trigger-btn" id="survey-toggle" onclick="document.getElementById('survey-content').style.display='block'; this.style.display='none';">Join Me</button>
-    <div class="privacy-trigger" onclick="var p=document.getElementById('privacy-content'); p.style.display=(p.style.display=='block'?'none':'block');">Privacy Policy & Transparency [+]</div>
-    <div id="privacy-content">
-      <p><strong>Your Trust, My Foundation.</strong></p>
-      <p>Information shared through the "The Next 23 Years" survey is used exclusively to refine my content and service offerings. No data is sold or shared with third parties.</p>
-      <ul>
-        <li><strong>Communication:</strong> WhatsApp messages initiated through this site are direct and personal.</li>
-        <li><strong>Cookies:</strong> We use minimal analytics to understand how "Witnesses" and potential partners interact with this journey.</li>
-        <li><strong>Rights:</strong> You may request the removal of your shared views at any time by reaching out directly.</li>
-      </ul>
-    </div>
-    <div id="survey-content">
-      <div class="s-box">
-        <label class="s-input-label">Where do you know me from?</label>
-        <div class="social-chips">
-          <div class="chip-option" onclick="this.classList.toggle('selected')">Facebook</div>
-          <div class="chip-option" onclick="this.classList.toggle('selected')">Instagram</div>
-          <div class="chip-option" onclick="this.classList.toggle('selected')">TikTok</div>
-          <div class="chip-option" onclick="this.classList.toggle('selected')">YouTube</div>
-          <div class="chip-option" onclick="this.classList.toggle('selected')">Witness Since 2008</div>
-        </div>
-        <label class="s-input-label">Our Connection:</label>
-        <select id="final-rel" class="s-field">
-          <option value="Online Follower">General Online Follower</option>
-          <option value="Former Customer">Former Customer / Client</option>
-          <option value="Supplier/Partner">Supplier / Business Partner</option>
-          <option value="Friend/Associate">Friend / Personal Associate</option>
-          <option value="New Connection">New Connection</option>
-        </select>
-        <label class="s-input-label">Where can my impact serve best?</label>
-        <select id="final-ind" class="s-field">
-          <option value="Premium Lifestyle & Recreation">Premium Lifestyle & Recreation</option>
-          <option value="Business Foundations Consulting">Business Foundations Consulting</option>
-          <option value="Digital Brand Architecture">Digital Brand Architecture</option>
-          <option value="Full-Time Podcastor & Speaker">Full-Time Podcastor & Speaker</option>
-        </select>
-        <label class="s-input-label">Personal Views...</label>
-        <textarea id="final-adv" class="s-field" rows="3" placeholder="Share your thoughts..."></textarea>
-        <button type="button" class="s-btn-final" onclick="
-          var selected=Array.from(document.querySelectorAll('.chip-option.selected')).map(el=>el.innerText).join(', ');
-          var rel=document.getElementById('final-rel').value;
-          var ind=document.getElementById('final-ind').value;
-          var adv=document.getElementById('final-adv').value;
-          var msg=encodeURIComponent('Mfalme Ukweli (James Waweru.k), I am rooting for you.\n\nPlatforms: '+(selected||'Direct')+'\nRelationship: '+rel+'\nSuggested Focus: '+ind+'\n\nViews: '+(adv||'Witnessing the journey.'));
-          window.open('https://wa.me/254727405842?text='+msg,'_blank');
-        ">Add Your Voice</button>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===================== CONNECT / FOOTER ===================== -->
 <footer id="connect">
   <div class="final-container">
@@ -1056,8 +1081,8 @@ nav {
       </div>
     </div>
 
-    <a href="https://www.youtube.com/@sharedmomentswithjustus" class="btn-shared-moments" target="_blank">
-      <span>UPCOMING FEATURE</span>
+    <a href="https://youtu.be/aT1vJNLdBEw" class="btn-shared-moments" target="_blank">
+      <span>NOW LIVE</span>
       MFALME UKWELI × SHARED MOMENTS WITH JUSTUS
     </a>
 
@@ -1096,6 +1121,18 @@ window.openVault = function(zoneId) {
 // NAV TOGGLE
 function toggleK(show) {
   document.getElementById('k-menu-overlay').style.display = show ? 'flex' : 'none';
+}
+
+// COPY SHARE LINK
+function copyShareLink(btn) {
+  var url = 'https://www.mfalmeukweli.co.ke/';
+  var tag = btn.querySelector('.share-copied-tag');
+  navigator.clipboard.writeText(url).then(function() {
+    if (tag) {
+      tag.classList.add('show');
+      setTimeout(function() { tag.classList.remove('show'); }, 1800);
+    }
+  });
 }
 
 // SCROLL INDICATOR
